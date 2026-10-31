@@ -1,0 +1,10 @@
+field,type,definition,allowed_values_or_unit
+scenario_id,text,Unique sprint benchmark identifier,SM001-SM200
+capacity_points,integer,Maximum effort assignable to a member,story points
+effort_points,integer,Estimated task effort,1-8 story points
+priority_points,integer,Relative task importance,1-5
+skill_type,category,Whether a skill is mandatory or beneficial,required; desired
+proficiency_level,integer,Synthetic member proficiency,1-5
+eligibility_status,binary,Whether the task-member pair may be selected,0; 1
+constraint_reason,category,Explanation for eligibility result,eligible; missing_required_skill; blocked_pair; task_fixed_to_another_member
+random_seed,integer,Seed used to reproduce a scenario,41001-41200

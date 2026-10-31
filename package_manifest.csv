@@ -1,0 +1,19 @@
+project,file,record_count,description
+testguard,builds.csv,100,One record per controlled CI build
+testguard,test_executions.csv,2400,One record per test execution; all history fields use earlier builds only
+testguard,data_dictionary.csv,11,Definitions for TestGuard fields
+sprintmatch,scenarios.csv,200,One record per benchmark scenario
+sprintmatch,members.csv,1404,Synthetic member profile per scenario
+sprintmatch,member_skills.csv,5616,Member skill and proficiency records
+sprintmatch,tasks.csv,5015,Sprint backlog tasks
+sprintmatch,task_skills.csv,6620,Required and desired task skills
+sprintmatch,assignment_constraints.csv,35083,One task-member eligibility record per pair
+sprintmatch,data_dictionary.csv,9,Definitions for SprintMatch fields
+billsync,scenarios.csv,200,One record per settlement benchmark scenario
+billsync,members.csv,1100,Synthetic member identifiers only
+billsync,expenses.csv,5579,One record per synthetic expense
+billsync,expense_shares.csv,20982,Participant shares that reconcile to each expense amount
+billsync,repayments.csv,80,Confirmed synthetic repayments
+billsync,settlement_constraints.csv,45,Optional pair blocks and transfer caps
+billsync,expected_balances.csv,1100,Verified post-expense and post-repayment balances; each scenario sums to zero
+billsync,data_dictionary.csv,9,Definitions for BillSync fields

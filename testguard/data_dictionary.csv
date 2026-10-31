@@ -1,0 +1,12 @@
+field,type,definition,allowed_values_or_unit
+build_id,text,Unique controlled-build identifier,B001-B100
+test_id,text,Stable automated-test identifier,T001-T024
+criticality,integer,Researcher-assigned importance before evaluation,1-5
+execution_duration_ms,integer,Observed synthetic execution cost,milliseconds
+outcome,category,Test result for the build,PASS; FAIL
+previous_failure_count,integer,Failures before the current build,>=0
+builds_since_last_failure,integer,Chronological recency; 999 means no earlier failure,>=1 or 999
+change_coverage_score,decimal,Degree to which the test covers the changed component,0.00-1.00
+cost_efficiency_score,decimal,Higher value represents a faster test,0.00-1.00
+risk_weighted_score,decimal,Fixed transparent weighted score,0.00-1.00
+fault_detected,binary,Whether the test detects the seeded fault,0; 1

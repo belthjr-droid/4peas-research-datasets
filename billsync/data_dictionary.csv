@@ -1,0 +1,10 @@
+field,type,definition,allowed_values_or_unit
+scenario_id,text,Unique settlement benchmark identifier,BS001-BS200
+amount_centavos,integer,Expense or repayment amount stored without floating-point currency,centavos
+split_type,category,Rule used to divide an expense,equal; percentage; exact
+share_centavos,integer,Member share; all shares for an expense equal the expense amount,centavos
+share_percentage,decimal,Share as a percentage of the expense,0-100
+blocked_status,binary,Whether the debtor-creditor payment link is prohibited,0; 1
+maximum_transfer_centavos,integer,Optional upper bound for a payment link,blank or positive centavos
+net_balance_centavos,integer,Positive means creditor; negative means debtor,centavos; scenario sum = 0
+random_seed,integer,Seed used to reproduce a scenario,72001-72200
